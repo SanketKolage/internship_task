@@ -22,9 +22,9 @@ const DataFetcher = () => {
         } else {
           setError("No user data available");
         }
-        setTimeout(() => {
+       
           setLoading(false);
-        }, 500);
+      
       })
       .catch((error) => {
         setError(error.message);
